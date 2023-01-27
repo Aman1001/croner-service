@@ -15,11 +15,29 @@
 	<description>Croner-service to quick cron jobs</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<bonecp.version>0.8.0.RELEASE</bonecp.version>
+		<mysql-connector.version>8.0.15</mysql-connector.version>
+		<modelmapper.version>0.7.5</modelmapper.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.jolbox</groupId>
+			<artifactId>bonecp</artifactId>
+			<version>${bonecp.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>${modelmapper.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
