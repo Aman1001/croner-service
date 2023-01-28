@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AddCronJobRequest {
+    private String jobKey;
     private String cronString;
     private String baseUrl;
     private String endPoint;
