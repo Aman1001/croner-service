@@ -1,4 +1,4 @@
-mysqlConfigOrderSystem:
+mysqlConfigCronner:
   acquireIncrement: 2
   driverClass: com.mysql.jdbc.Driver
   idleConnectionTestPeriodInSeconds: 100
@@ -9,4 +9,4 @@ mysqlConfigOrderSystem:
   partitionCount: 2
   password: ${MYSQL_PASSWORD}
   statementsCacheSize: 10
-  user: ${MYSQL_ORDER_SYSTEM_USER_NAME}
+  user: ${MYSQL_USER_NAME}
